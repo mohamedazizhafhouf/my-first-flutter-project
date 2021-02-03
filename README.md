@@ -1,16 +1,14 @@
-# app1
+**Files are on the master branch**
 
-A new Flutter project.
+# Increment_Decrement
+A Flutter app to introduce Flutter to the mobile development team of Google DSC ISI
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone this repository
+  1.1: If you have git: git clone https://github.com/aaronhaddad/flutter_proj_1_dsc_isi.git
+  1.2: If you don't have git, simply download the repo
+2. Open lib/main.dart
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Good luck!
+This project is good for anyone getting into Flutter! Contribute and make this better!
