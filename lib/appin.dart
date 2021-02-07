@@ -8,8 +8,6 @@ class AppIn extends StatefulWidget {
 }
 
 class _AppInState extends State<AppIn> {
-  //This variable is the counter
-  //Keep in mind that i >= 0
   int i = 0;
   void increment() {
     setState(() {
@@ -20,32 +18,20 @@ class _AppInState extends State<AppIn> {
   void decrement() {
     if (i > 0) {
       setState(() {
-        //Make i decrement, did you make it? Hint: use basic arithmetic operations!
+        i--;
       });
     }
   }
-
-  //In either of these function there are two things to notice
-  /*
-    1. There is no return!
-      The reason behind this is beacaus the function is a void and there is no need to return a value
-      as this function updates the state
-    state = what's shown on the screen
-    2. What is setState?
-      this method is used to update the state of the app
-  */
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Increment or decrement!',
+          'Increment or decrement! MAH',
         ),
-        //Make the title centered by uncommentig the next line and setting the value to true
-        //centerTitle: ,
-        //Also play a little bit with the elevation, the lower the value is the flatter it is! 0>=elevation
-        //elevation: ,
+        centerTitle: true,
+        elevation: 30,
       ),
       body: Center(
         child: Text(
@@ -64,8 +50,7 @@ class _AppInState extends State<AppIn> {
               GestureDetector(
                 onTap: () {
                   print('Pressed the -1 button');
-                  //Call the decrement function by uncommenting the next line
-                  //decrement();
+                  decrement();
                 },
                 child: CircleAvatar(
                   backgroundColor: Colors.black,
@@ -78,7 +63,7 @@ class _AppInState extends State<AppIn> {
               GestureDetector(
                 onTap: () {
                   print('Pressed the +1 button');
-                  //Cell the increment function here!
+                  increment();
                 },
                 child: CircleAvatar(
                   backgroundColor: Colors.black,
@@ -95,7 +80,3 @@ class _AppInState extends State<AppIn> {
     );
   }
 }
-
-//By now you should be done! I hope you executed all the steps
-//If you have any problem call me anytime, I'm Aaron Haddad on all social networks!
-//And try to be curious and explorer the source of the different classes!
